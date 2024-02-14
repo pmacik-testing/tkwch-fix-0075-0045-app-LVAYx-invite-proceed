@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-sipx
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0045-tenant/tkwch-fix-0075-0045-app/devfile-sample-sipx@sha256:27a73f80ff22c6215624ff5caab9d582d38da27f6161178c97710a5437af3859
         name: my-nodejs
         ports:
         - containerPort: 3001
