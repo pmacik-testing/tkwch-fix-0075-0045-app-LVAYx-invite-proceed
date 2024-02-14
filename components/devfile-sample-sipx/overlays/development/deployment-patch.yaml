@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sipx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0045-tenant/tkwch-fix-0075-0045-app/devfile-sample-sipx@sha256:27a73f80ff22c6215624ff5caab9d582d38da27f6161178c97710a5437af3859
+        name: my-nodejs
+        resources: {}
+status: {}
